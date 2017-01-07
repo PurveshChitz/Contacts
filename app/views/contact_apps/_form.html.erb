@@ -1,3 +1,4 @@
+<div align="center">
 <%= form_for(@contact_app) do |f| %>
   <% if @contact_app.errors.any? %>
     <div id="error_explanation">
@@ -47,7 +48,10 @@
     <%= f.label :Facebook_Id %><br>
     <%= f.text_field :Facebook_Id %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+
+  <br />
+  <%= f.submit "Save Contact", class: "btn btn-success" %>
+  
 <% end %>
+</div>
